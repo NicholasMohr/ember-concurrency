@@ -145,7 +145,7 @@
 ### 0.7.4
   - When using Ember 2.5.0 or higher, you can now pass task objects
     directly to the closure `action` helper, e.g.
-    `onclick={{action myTask 1 2 3}}`. This works exactly the same
+    `{{action myTask 1 2 3}}`. This works exactly the same
     as `onclick={{perform myTask 1 2 3}}` but it's nice because
     any component that fires actions using the `(action)` helper
     can now directly be passed a task and have it run properly,

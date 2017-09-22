@@ -9,6 +9,7 @@ module.exports = function(defaults) {
   if (includePolyfill) {
     babelOptions.includePolyfill = true;
   } else {
+    babelOptions.includePolyfill = true;
     babelOptions.blacklist = ['regenerator'];
   }
 

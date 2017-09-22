@@ -1,4 +1,4 @@
-import { helper } from '@ember/component/helper';
+import Ember from 'ember'; const helper = Ember.HTMLBars.makeBoundHelper;
 
 export function scale([value, lowLimit, highLimit]/*, hash*/) {
   let v = 100 * (value) / (highLimit + 1000 - lowLimit);

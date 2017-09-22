@@ -1,4 +1,4 @@
-import { helper } from '@ember/component/helper';
+import Ember from 'ember'; const helper = Ember.HTMLBars.makeBoundHelper;
 
 export function sum([a,b]/*, hash*/) {
   return a+b;

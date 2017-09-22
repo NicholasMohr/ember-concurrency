@@ -4,5 +4,5 @@ function taskHelper([task, ...args]) {
   return task._curry(...args);
 }
 
-export default Ember.Helper.helper(taskHelper);
+export default Ember.HTMLBars.makeBoundHelper(taskHelper);
 

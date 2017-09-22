@@ -1,10 +1,11 @@
 import Controller, { inject as controller } from '@ember/controller';
 import { computed } from '@ember/object';
+import { A } from '@ember/array';
 
 export default Controller.extend({
   appController: controller('application'),
 
-  tableOfContents: [
+  tableOfContents: A([
     { route: "docs.introduction", title: "Home" },
     { route: "docs.installation", title: "Installation" },
 
@@ -36,7 +37,7 @@ export default Controller.extend({
     { route: "docs.examples.ajax-throttling", title: "AJAX Throttling" },
     { route: "docs.examples.route-tasks", title: "Route Tasks" },
     { route: "docs.examples.joining-tasks", title: "Awaiting Multiple Child Tasks" },
-  ],
+  ]),
 
   flatContents: computed(function(){
     var flattened = [];

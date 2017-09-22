@@ -12,6 +12,6 @@ export function cancelHelper(args) {
   return taskHelperClosure('cancelAll', [cancelable, CANCEL_REASON]);
 }
 
-export default Ember.Helper.helper(cancelHelper);
+export default Ember.HTMLBars.makeBoundHelper(cancelHelper);
 
 

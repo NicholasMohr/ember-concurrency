@@ -5,5 +5,5 @@ export function performHelper(args, hash) {
   return taskHelperClosure('perform', args, hash);
 }
 
-export default Ember.Helper.helper(performHelper);
+export default Ember.HTMLBars.makeBoundHelper(performHelper);
 
